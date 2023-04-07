@@ -1,0 +1,133 @@
+{
+  "id": "083b1865-9bdd-4f19-a54b-24e5d8819191",
+  "version": "2.0",
+  "name": "pawelgoj-zadanie4",
+  "url": "http://webdriveruniversity.com/index.html",
+  "tests": [{
+    "id": "1fa2530c-1a47-41ad-a1fc-1a441e2cd2d4",
+    "name": "Check if the registration user was successful",
+    "commands": [{
+      "id": "b814880c-5df7-4c05-930b-db25795d0a80",
+      "comment": "Otwórz stronę: http://webdriveruniversity.com/index.html",
+      "command": "open",
+      "target": "http://webdriveruniversity.com/index.html",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "e9b693d6-4748-4816-b1df-dc25db5ecebf",
+      "comment": "Kliknij w hiperłącze \"CONTACT US\"",
+      "command": "click",
+      "target": "css=#contact-us h1",
+      "targets": [
+        ["css=#contact-us h1", "css:finder"],
+        ["xpath=//a[@id='contact-us']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'CONTACT US')]", "xpath:innerText"]
+      ],
+      "value": "",
+      "opensWindow": true,
+      "windowHandleName": "win4236",
+      "windowTimeout": 2000
+    }, {
+      "id": "b0ab4f63-442e-4e14-bfa6-34bc7affcf19",
+      "comment": "Wybierz nowo otwarte okno",
+      "command": "selectWindow",
+      "target": "handle=${win4236}",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "073daef1-6a40-461a-86bd-1b023e1d324b",
+      "comment": "Wpisz imię ",
+      "command": "type",
+      "target": "name=first_name",
+      "targets": [
+        ["name=first_name", "name"],
+        ["css=.feedback-input:nth-child(1)", "css:finder"],
+        ["xpath=//input[@name='first_name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact_form']/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "a606a001-433f-4bf1-8ad6-d2b9c0df7e8e",
+      "comment": "Wpisz nazwisko",
+      "command": "type",
+      "target": "name=last_name",
+      "targets": [
+        ["name=last_name", "name"],
+        ["css=.feedback-input:nth-child(2)", "css:finder"],
+        ["xpath=//input[@name='last_name']", "xpath:attributes"],
+        ["xpath=//form[@id='contact_form']/input[2]", "xpath:idRelative"],
+        ["xpath=//input[2]", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "18f2438f-969f-4e24-ab2a-619fa6b4fac4",
+      "comment": "Wpisz adres email ",
+      "command": "type",
+      "target": "name=email",
+      "targets": [
+        ["name=email", "name"],
+        ["css=.feedback-input:nth-child(3)", "css:finder"],
+        ["xpath=//input[@name='email']", "xpath:attributes"],
+        ["xpath=//form[@id='contact_form']/input[3]", "xpath:idRelative"],
+        ["xpath=//input[3]", "xpath:position"]
+      ],
+      "value": "test@email.com"
+    }, {
+      "id": "9ad506b7-22d9-4f98-8fe9-7959e2e90c56",
+      "comment": "Wpisz teks wiadomości ",
+      "command": "type",
+      "target": "name=message",
+      "targets": [
+        ["name=message", "name"],
+        ["css=.feedback-input:nth-child(4)", "css:finder"],
+        ["xpath=//textarea[@name='message']", "xpath:attributes"],
+        ["xpath=//form[@id='contact_form']/textarea", "xpath:idRelative"],
+        ["xpath=//textarea", "xpath:position"]
+      ],
+      "value": "Larem ipsum "
+    }, {
+      "id": "3188ad2d-9446-4b4c-8414-9f228f359651",
+      "comment": "Kliknij w przycisk <SUBMIT>",
+      "command": "click",
+      "target": "css=.contact_button:nth-child(2)",
+      "targets": [
+        ["css=.contact_button:nth-child(2)", "css:finder"],
+        ["xpath=//input[@value='SUBMIT']", "xpath:attributes"],
+        ["xpath=//div[@id='form_buttons']/input[2]", "xpath:idRelative"],
+        ["xpath=//div/input[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b60d6408-4fa6-46ea-8002-4f055f735fda",
+      "comment": "Sprawdź czy pojawia się komunikat: \"Thank You for your Message!\"",
+      "command": "assertText",
+      "target": "css=h1",
+      "targets": [
+        ["css=h1", "css:finder"],
+        ["xpath=//div[@id='contact_reply']/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Thank You for your Message!')]", "xpath:innerText"]
+      ],
+      "value": "Thank You for your Message!"
+    }, {
+      "id": "20ac158c-3278-40bd-a112-3dd6f2a927ca",
+      "comment": "",
+      "command": "echo",
+      "target": "Wysyłanie wiadomości powiodło sie !!!!",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "abc43ed8-194f-401d-ba19-4e60cd0f0b68",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["1fa2530c-1a47-41ad-a1fc-1a441e2cd2d4"]
+  }],
+  "urls": [],
+  "plugins": []
+}

@@ -1,0 +1,298 @@
+{
+  "id": "e392d214-8a25-4a70-b97f-368cd23be7ad",
+  "version": "2.0",
+  "name": "Zadanie5",
+  "url": "https://parabank.parasoft.com/parabank/register.htm",
+  "tests": [{
+    "id": "9bb3e1e2-be82-4900-a47a-918b7b38f203",
+    "name": "Check if the registration user was successful",
+    "commands": [{
+      "id": "65286439-8d55-45c3-8254-89d147395f8c",
+      "comment": "Wejdź na stronę: https://parabank.parasoft.com/parabank/register.htm",
+      "command": "open",
+      "target": "https://parabank.parasoft.com/parabank/register.htm",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "a8b5e7da-090b-4a3f-acdc-5badee39cea2",
+      "comment": "Wpisz imie w odpowiedniej rubryce ",
+      "command": "type",
+      "target": "id=customer.firstName",
+      "targets": [
+        ["id=customer.firstName", "id"],
+        ["name=customer.firstName", "name"],
+        ["css=#customer\\.firstName", "css:finder"],
+        ["xpath=//input[@id='customer.firstName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr/td[2]/input", "xpath:idRelative"],
+        ["xpath=//td[2]/input", "xpath:position"]
+      ],
+      "value": "Test1"
+    }, {
+      "id": "27763fbd-02ff-492b-9ba4-1f01797af4ef",
+      "comment": "Wpisz nazwisko w odpowiedniej rubryce ",
+      "command": "type",
+      "target": "id=customer.lastName",
+      "targets": [
+        ["id=customer.lastName", "id"],
+        ["name=customer.lastName", "name"],
+        ["css=#customer\\.lastName", "css:finder"],
+        ["xpath=//input[@id='customer.lastName']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[2]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[2]/td[2]/input", "xpath:position"]
+      ],
+      "value": "test1"
+    }, {
+      "id": "158cdb55-2401-4648-bc11-fbcc08eb4feb",
+      "comment": "Wpisz adres zamieszkania w odpowiedniej rubryce ",
+      "command": "type",
+      "target": "id=customer.address.street",
+      "targets": [
+        ["id=customer.address.street", "id"],
+        ["name=customer.address.street", "name"],
+        ["css=#customer\\.address\\.street", "css:finder"],
+        ["xpath=//input[@id='customer.address.street']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[3]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[3]/td[2]/input", "xpath:position"]
+      ],
+      "value": "test 120"
+    }, {
+      "id": "0b127550-1b6d-4b67-97b3-87ab20035868",
+      "comment": "Wpisz miasto w odpowiedniej rubryce ",
+      "command": "type",
+      "target": "id=customer.address.city",
+      "targets": [
+        ["id=customer.address.city", "id"],
+        ["name=customer.address.city", "name"],
+        ["css=#customer\\.address\\.city", "css:finder"],
+        ["xpath=//input[@id='customer.address.city']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[4]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[4]/td[2]/input", "xpath:position"]
+      ],
+      "value": "Testow"
+    }, {
+      "id": "97b1e9aa-0975-44de-abc5-61f9fe1ada08",
+      "comment": "Wpisz województwo w odpowiedniej rubryce",
+      "command": "type",
+      "target": "id=customer.address.state",
+      "targets": [
+        ["id=customer.address.state", "id"],
+        ["name=customer.address.state", "name"],
+        ["css=#customer\\.address\\.state", "css:finder"],
+        ["xpath=//input[@id='customer.address.state']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[5]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[5]/td[2]/input", "xpath:position"]
+      ],
+      "value": "test"
+    }, {
+      "id": "b88468e4-09a3-4a87-92d2-1a07bf7cd993",
+      "comment": "Wpisz \"zipCode\" w odpowiedniej rubryce ",
+      "command": "type",
+      "target": "id=customer.address.zipCode",
+      "targets": [
+        ["id=customer.address.zipCode", "id"],
+        ["name=customer.address.zipCode", "name"],
+        ["css=#customer\\.address\\.zipCode", "css:finder"],
+        ["xpath=//input[@id='customer.address.zipCode']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[6]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[6]/td[2]/input", "xpath:position"]
+      ],
+      "value": "10-100"
+    }, {
+      "id": "41639c5e-e338-4a68-b723-b5643def359a",
+      "comment": "Wpisz numer telefonu w odpowiedniej rubryce ",
+      "command": "type",
+      "target": "id=customer.phoneNumber",
+      "targets": [
+        ["id=customer.phoneNumber", "id"],
+        ["name=customer.phoneNumber", "name"],
+        ["css=#customer\\.phoneNumber", "css:finder"],
+        ["xpath=//input[@id='customer.phoneNumber']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[7]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[7]/td[2]/input", "xpath:position"]
+      ],
+      "value": "100100100"
+    }, {
+      "id": "6076f591-dbdc-4394-9f8f-01eee2d7a3db",
+      "comment": "Stwórz losowy login",
+      "command": "executeScript",
+      "target": "return `Test ${Math.round(1000*Math.random())}`",
+      "targets": [],
+      "value": "login "
+    }, {
+      "id": "e6e8b68c-640e-42ad-b0d0-df06afd2e550",
+      "comment": "Wisz login ",
+      "command": "type",
+      "target": "id=customer.username",
+      "targets": [
+        ["id=customer.username", "id"],
+        ["name=customer.username", "name"],
+        ["css=#customer\\.username", "css:finder"],
+        ["xpath=//input[@id='customer.username']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[10]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[10]/td[2]/input", "xpath:position"]
+      ],
+      "value": "${login}"
+    }, {
+      "id": "cf35a03f-805a-405f-bf64-f318582f3f93",
+      "comment": "Wpisz hasło ",
+      "command": "type",
+      "target": "id=customer.password",
+      "targets": [
+        ["id=customer.password", "id"],
+        ["name=customer.password", "name"],
+        ["css=#customer\\.password", "css:finder"],
+        ["xpath=//input[@id='customer.password']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[11]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[11]/td[2]/input", "xpath:position"]
+      ],
+      "value": "TestTest"
+    }, {
+      "id": "2540efc0-6f46-497a-b140-8060e7bcb766",
+      "comment": "Potwierdź hasło ",
+      "command": "type",
+      "target": "id=repeatedPassword",
+      "targets": [
+        ["id=repeatedPassword", "id"],
+        ["name=repeatedPassword", "name"],
+        ["css=#repeatedPassword", "css:finder"],
+        ["xpath=//input[@id='repeatedPassword']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[12]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[12]/td[2]/input", "xpath:position"]
+      ],
+      "value": "TestTest"
+    }, {
+      "id": "74c3ad0d-9501-4e8b-867f-d22143df53a0",
+      "comment": "Wprowadx numer bezpieczeństwa ",
+      "command": "type",
+      "target": "id=customer.ssn",
+      "targets": [
+        ["id=customer.ssn", "id"],
+        ["name=customer.ssn", "name"],
+        ["css=#customer\\.ssn", "css:finder"],
+        ["xpath=//input[@id='customer.ssn']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[8]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[8]/td[2]/input", "xpath:position"]
+      ],
+      "value": "1232"
+    }, {
+      "id": "6d61ff2b-ee0d-42ca-a4e5-e78948a23b39",
+      "comment": "kliknij w przycisk <Register> ",
+      "command": "click",
+      "target": "css=td > .button",
+      "targets": [
+        ["css=td > .button", "css:finder"],
+        ["xpath=//input[@value='Register']", "xpath:attributes"],
+        ["xpath=//form[@id='customerForm']/table/tbody/tr[13]/td[2]/input", "xpath:idRelative"],
+        ["xpath=//tr[13]/td[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "483db6d2-2f91-47ee-9a1c-2f376d0496b9",
+      "comment": "Sprwdź czy pojawia sie komunikat o stworzeniu konta ",
+      "command": "assertText",
+      "target": "css=#rightPanel > p",
+      "targets": [
+        ["css=#rightPanel > p", "css:finder"],
+        ["xpath=//div[@id='rightPanel']/p", "xpath:idRelative"],
+        ["xpath=//div[2]/p", "xpath:position"],
+        ["xpath=//p[contains(.,'Your account was created successfully. You are now logged in.')]", "xpath:innerText"]
+      ],
+      "value": "Your account was created successfully. You are now logged in."
+    }, {
+      "id": "ccbd3aa3-5696-41b6-89f3-7e41c2cbde4a",
+      "comment": "Kliknij przycisk <Log out> by sie wylogować ",
+      "command": "click",
+      "target": "linkText=Log Out",
+      "targets": [
+        ["linkText=Log Out", "linkText"],
+        ["css=ul:nth-child(3) > li:nth-child(8) > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log Out')]", "xpath:link"],
+        ["xpath=//div[@id='leftPanel']/ul/li[8]/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, '/parabank/logout.htm')]", "xpath:href"],
+        ["xpath=//li[8]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log Out')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b0f98634-3e5f-4993-afd5-90f0a257160a",
+      "comment": "Uzupełnij rubrykę z loginem ",
+      "command": "click",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.login:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "7cfd038f-4c96-4283-a43b-70c8d4a0be5c",
+      "comment": "i hasłem by się zlogować ",
+      "command": "type",
+      "target": "name=username",
+      "targets": [
+        ["name=username", "name"],
+        ["css=.login:nth-child(2) > .input", "css:finder"],
+        ["xpath=//input[@name='username']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${login}"
+    }, {
+      "id": "7b02c10f-e577-437e-b440-57190febea0d",
+      "comment": "Wprowadź hasło ",
+      "command": "type",
+      "target": "name=password",
+      "targets": [
+        ["name=password", "name"],
+        ["css=.login:nth-child(4) > .input", "css:finder"],
+        ["xpath=//input[@name='password']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "TestTest"
+    }, {
+      "id": "8a4da075-9f7b-41ee-88cc-84ad077b2f2f",
+      "comment": "kliknij przycisk <LOG IN>",
+      "command": "click",
+      "target": "css=.button:nth-child(1)",
+      "targets": [
+        ["css=.button:nth-child(1)", "css:finder"],
+        ["xpath=//input[@value='Log In']", "xpath:attributes"],
+        ["xpath=//div[@id='loginPanel']/form/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "2d22cf34-c516-4e41-a4ca-a860e38d4557",
+      "comment": "Sprawdź czy możesz zobaczyć swoje konto",
+      "command": "assertText",
+      "target": "css=.title",
+      "targets": [
+        ["css=.title", "css:finder"],
+        ["xpath=//div[@id='rightPanel']/div/div/h1", "xpath:idRelative"],
+        ["xpath=//h1", "xpath:position"],
+        ["xpath=//h1[contains(.,'Accounts Overview')]", "xpath:innerText"]
+      ],
+      "value": "Accounts Overview"
+    }, {
+      "id": "520e9996-7565-4fec-bfb1-e460a3553a96",
+      "comment": "",
+      "command": "echo",
+      "target": "Proces rejstracji został zwalidowany mozna sie zalogowac na zarejstrowany login i hasło ",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "216a1889-051f-4330-b08d-ea073fa078ca",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["9bb3e1e2-be82-4900-a47a-918b7b38f203"]
+  }],
+  "urls": ["https://parabank.parasoft.com/parabank/register.htm"],
+  "plugins": []
+}

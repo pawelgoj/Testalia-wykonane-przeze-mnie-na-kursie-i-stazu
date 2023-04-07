@@ -1,0 +1,407 @@
+{
+  "id": "c12d314a-023c-49cb-9e6b-ec02fc4dee67",
+  "version": "2.0",
+  "name": "pawelgojtesty2",
+  "url": "https://www.saucedemo.com/",
+  "tests": [{
+    "id": "28d1084f-6ce2-4f16-a4e7-a87d69836e31",
+    "name": "Check if the user is able to login successfully",
+    "commands": [{
+      "id": "f4c9f1d2-1891-4bfe-9c67-3a4850de9e80",
+      "comment": "Wejdź na stronę \"www.saucedemo.com\"",
+      "command": "open",
+      "target": "https://www.saucedemo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d8d1b31-710f-41d9-a174-9521a71cbd4c",
+      "comment": "Poprawny login",
+      "command": "store",
+      "target": "standard_user",
+      "targets": [],
+      "value": "login"
+    }, {
+      "id": "6061da34-3c49-4abc-8e0e-1415db1ba504",
+      "comment": "Poprawne hasło",
+      "command": "store",
+      "target": "secret_sauce",
+      "targets": [],
+      "value": "Key"
+    }, {
+      "id": "149c593b-2764-4f9c-aeb2-a7e53f3ddb29",
+      "comment": "Wprowadź poprwany login ",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "${login}"
+    }, {
+      "id": "1334ab97-ff89-473b-ba6b-0bdf96263b5a",
+      "comment": "Wprowadź poprawne hasło ",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${Key}"
+    }, {
+      "id": "fdfb9041-3b23-4645-8859-d950877942aa",
+      "comment": "Kliknij w przycisk <LOGIN>",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "05a33548-bb78-402c-9a6c-0f90da6874cb",
+      "comment": "Otwiera się okno z produktami ",
+      "command": "assertText",
+      "target": "css=.title",
+      "targets": [],
+      "value": "PRODUCTS"
+    }, {
+      "id": "a7a499f9-bf4d-40a3-8054-5887fed4bdcf",
+      "comment": "",
+      "command": "echo",
+      "target": "Proces logowania działa poprawnie!!!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "27068cb7-b323-48fd-aea4-9653e18c512d",
+    "name": "Verify the account lockout message",
+    "commands": [{
+      "id": "b7ac59d6-8e6c-4230-a0c7-9b6dbc870f78",
+      "comment": "Wejdź na stronę \"www.saucedemo.com\"",
+      "command": "open",
+      "target": "https://www.saucedemo.com/",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "47779bc3-f07b-4970-aab9-5312d6371f89",
+      "comment": "Wrowadź login dla zablokowanego użytkownika ",
+      "command": "type",
+      "target": "css=*[data-test=\"username\"]",
+      "targets": [
+        ["css=*[data-test=\"username\"]", "css:data-attr"],
+        ["id=user-name", "id"],
+        ["name=user-name", "name"],
+        ["css=#user-name", "css:finder"],
+        ["xpath=//input[@id='user-name']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "locked_out_user"
+    }, {
+      "id": "f5b18461-853f-4641-867a-f048afe9a997",
+      "comment": "Wprowadź hasło dla zablokowanego użytkownika",
+      "command": "type",
+      "target": "css=*[data-test=\"password\"]",
+      "targets": [
+        ["css=*[data-test=\"password\"]", "css:data-attr"],
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "secret_sauce"
+    }, {
+      "id": "a0ae3715-dbe0-45c1-8151-124407c6794e",
+      "comment": "kliknij w przycisk <LOGIN>",
+      "command": "click",
+      "target": "id=login-button",
+      "targets": [
+        ["css=*[data-test=\"login-button\"]", "css:data-attr"],
+        ["id=login-button", "id"],
+        ["name=login-button", "name"],
+        ["css=#login-button", "css:finder"],
+        ["xpath=//input[@id='login-button']", "xpath:attributes"],
+        ["xpath=//div[@id='login_button_container']/div/form/input", "xpath:idRelative"],
+        ["xpath=//form/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "bcb25eab-4d3e-4abf-8478-fa6216cace14",
+      "comment": "Pojawia się komunikat, że użytkowanik jest zablokowany ",
+      "command": "assertText",
+      "target": "css=*[data-test=\"error\"]",
+      "targets": [],
+      "value": "Epic sadface: Sorry, this user has been locked out."
+    }, {
+      "id": "f68c5368-aef5-41ee-a49e-87f4da1a6292",
+      "comment": "System działa poprawnie-zbanowany użytkownik nie może się zalogować!!!",
+      "command": "echo",
+      "target": "System działa poprawnie-zbanowany użytkownik nie może się zalogować!!!",
+      "targets": [],
+      "value": ""
+    }]
+  }, {
+    "id": "664471ce-eead-4071-a1ab-c690099fc045",
+    "name": "Verify adding the product to the cart and ordering it",
+    "commands": [{
+      "id": "a812bf6c-bb90-43e5-8a8f-940603f79d99",
+      "comment": "(Wykonaj Zadanie1) - Użytkownik loguje się urzywając poprawnego loginu i hasła ",
+      "command": "run",
+      "target": "Check if the user is able to login successfully",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "74c54926-1660-46a2-999f-41bdcabee4ee",
+      "comment": "Kliknij w rozwijane menu do wyboru metody sortowania produktów",
+      "command": "click",
+      "target": "css=.select_container",
+      "targets": [
+        ["css=.select_container", "css:finder"],
+        ["xpath=//div[@id='header_container']/div[2]/div[2]/span", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/span", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "f8d3eb27-5ef6-4ceb-8ce9-9d76d20624b1",
+      "comment": "Wybierz opcję sortowania od A do Z",
+      "command": "click",
+      "target": "css=option:nth-child(1)",
+      "targets": [
+        ["css=option:nth-child(1)", "css:finder"],
+        ["xpath=//option[@value='az']", "xpath:attributes"],
+        ["xpath=//div[@id='header_container']/div[2]/div[2]/span/select/option", "xpath:idRelative"],
+        ["xpath=//option", "xpath:position"],
+        ["xpath=//option[contains(.,'Name (A to Z)')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e34ef6d6-7c43-4483-b9c9-8f7d2282fb77",
+      "comment": "Przy pierwszym produkcjie od góry kliknij przycisk <ADD TO CART>",
+      "command": "click",
+      "target": "css=*[data-test=\"add-to-cart-sauce-labs-backpack\"]",
+      "targets": [
+        ["css=*[data-test=\"add-to-cart-sauce-labs-backpack\"]", "css:data-attr"],
+        ["id=add-to-cart-sauce-labs-backpack", "id"],
+        ["name=add-to-cart-sauce-labs-backpack", "name"],
+        ["css=#add-to-cart-sauce-labs-backpack", "css:finder"],
+        ["xpath=//button[@id='add-to-cart-sauce-labs-backpack']", "xpath:attributes"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[2]/div[2]/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e3a78bea-476d-445a-b28c-fb8ec708a55d",
+      "comment": "Zapamiętaj cenę produktu który chcesz dodać",
+      "command": "storeText",
+      "target": "css=.inventory_item:nth-child(1) .inventory_item_price",
+      "targets": [
+        ["css=.inventory_item:nth-child(1) .inventory_item_price", "css:finder"],
+        ["xpath=//div[@id='inventory_container']/div/div/div[2]/div[2]/div", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div/div/div[2]/div[2]/div", "xpath:position"]
+      ],
+      "value": "cena"
+    }, {
+      "id": "3f92dda3-01f8-404b-88e9-6f1263f1aa81",
+      "comment": "Zapamietaj nazwę produktu który chcesz dodać ",
+      "command": "storeText",
+      "target": "css=#item_4_title_link > .inventory_item_name",
+      "targets": [
+        ["css=#item_4_title_link > .inventory_item_name", "css:finder"],
+        ["xpath=//a[@id='item_4_title_link']/div", "xpath:idRelative"],
+        ["xpath=//a/div", "xpath:position"]
+      ],
+      "value": "nazwa"
+    }, {
+      "id": "9ebb5499-2521-4504-8653-e177c89af71f",
+      "comment": "Kliknij w ikonkę koszyka na samej górze strony po prawej stronie ",
+      "command": "click",
+      "target": "linkText=1",
+      "targets": [
+        ["linkText=1", "linkText"],
+        ["css=.shopping_cart_link", "css:finder"],
+        ["xpath=//div[@id='shopping_cart_container']/a", "xpath:idRelative"],
+        ["xpath=//div[3]/a", "xpath:position"],
+        ["xpath=//a[contains(.,'1')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ae13ba05-52dd-4873-b7e4-4e4e52aba533",
+      "comment": "Sprawdź nazwę produktu",
+      "command": "assertText",
+      "target": "css=.inventory_item_name",
+      "targets": [],
+      "value": "${nazwa}"
+    }, {
+      "id": "7d40ead3-08c8-4f6c-a24a-b4acd01717aa",
+      "comment": "Sprawdź cenę",
+      "command": "assertText",
+      "target": "css=.inventory_item_price",
+      "targets": [],
+      "value": "${cena}"
+    }, {
+      "id": "dc266236-0fe0-4d28-bf19-dd5f1ec29e94",
+      "comment": "Kliknij <CHECKOUT>",
+      "command": "click",
+      "target": "css=*[data-test=\"checkout\"]",
+      "targets": [
+        ["css=*[data-test=\"checkout\"]", "css:data-attr"],
+        ["id=checkout", "id"],
+        ["name=checkout", "name"],
+        ["css=#checkout", "css:finder"],
+        ["xpath=//button[@id='checkout']", "xpath:attributes"],
+        ["xpath=//div[@id='cart_contents_container']/div/div[2]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d490ad07-e0d0-4e59-bc16-c8e4fd7add5b",
+      "comment": "Uzupełnij dane do wysyłki pole \"First Name\"",
+      "command": "type",
+      "target": "css=*[data-test=\"firstName\"]",
+      "targets": [
+        ["css=*[data-test=\"firstName\"]", "css:data-attr"],
+        ["id=first-name", "id"],
+        ["name=firstName", "name"],
+        ["css=#first-name", "css:finder"],
+        ["xpath=//input[@id='first-name']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/div/input", "xpath:idRelative"],
+        ["xpath=//input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "d69cab17-6079-4a79-9e4d-85bdeec3cf6c",
+      "comment": "Uzupełnij dane do wysyłki pole \"Last Name\"",
+      "command": "type",
+      "target": "css=*[data-test=\"lastName\"]",
+      "targets": [
+        ["css=*[data-test=\"lastName\"]", "css:data-attr"],
+        ["id=last-name", "id"],
+        ["name=lastName", "name"],
+        ["css=#last-name", "css:finder"],
+        ["xpath=//input[@id='last-name']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "Test"
+    }, {
+      "id": "2270d3d6-753f-457a-a324-8cfb43483d47",
+      "comment": "Uzupełnij dane do wysyłki pole: \"Zip\"",
+      "command": "type",
+      "target": "css=*[data-test=\"postalCode\"]",
+      "targets": [
+        ["css=*[data-test=\"postalCode\"]", "css:data-attr"],
+        ["id=postal-code", "id"],
+        ["name=postalCode", "name"],
+        ["css=#postal-code", "css:finder"],
+        ["xpath=//input[@id='postal-code']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div/div[3]/input", "xpath:idRelative"],
+        ["xpath=//div[3]/input", "xpath:position"]
+      ],
+      "value": "10-100"
+    }, {
+      "id": "44de814b-688b-4101-98e7-4b41c27a84e5",
+      "comment": "Kliknij <CONTINUE>",
+      "command": "click",
+      "target": "css=*[data-test=\"continue\"]",
+      "targets": [
+        ["css=*[data-test=\"continue\"]", "css:data-attr"],
+        ["id=continue", "id"],
+        ["name=continue", "name"],
+        ["css=#continue", "css:finder"],
+        ["xpath=//input[@id='continue']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_info_container']/div/form/div[2]/input", "xpath:idRelative"],
+        ["xpath=//form/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f5d5885-fa58-4f2f-a17c-5c121d21f9a3",
+      "comment": "Kliknij <FINISH>",
+      "command": "click",
+      "target": "css=*[data-test=\"finish\"]",
+      "targets": [
+        ["css=*[data-test=\"finish\"]", "css:data-attr"],
+        ["id=finish", "id"],
+        ["name=finish", "name"],
+        ["css=#finish", "css:finder"],
+        ["xpath=//button[@id='finish']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_summary_container']/div/div[2]/div[8]/button[2]", "xpath:idRelative"],
+        ["xpath=//button[2]", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d558eb99-6abd-4802-89c8-2a1958be2d0c",
+      "comment": "Sprawdź komunikat, który się pojawił. ",
+      "command": "assertText",
+      "target": "css=.complete-text",
+      "targets": [],
+      "value": "Your order has been dispatched, and will arrive just as fast as the pony can get there!"
+    }, {
+      "id": "60551a02-94d8-4e5e-9fbc-2260cac738b5",
+      "comment": "Wróć do sklepu ",
+      "command": "click",
+      "target": "css=*[data-test=\"back-to-products\"]",
+      "targets": [
+        ["css=*[data-test=\"back-to-products\"]", "css:data-attr"],
+        ["id=back-to-products", "id"],
+        ["name=back-to-products", "name"],
+        ["css=#back-to-products", "css:finder"],
+        ["xpath=//button[@id='back-to-products']", "xpath:attributes"],
+        ["xpath=//div[@id='checkout_complete_container']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/button", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d0d2e354-7768-4081-a4d3-6fef5a7088f5",
+      "comment": "Kliknij w ikonkę koszyka na samej górze strony po prawej stronie ",
+      "command": "click",
+      "target": "css=.shopping_cart_link",
+      "targets": [
+        ["css=.shopping_cart_link", "css:finder"],
+        ["xpath=//div[@id='shopping_cart_container']/a", "xpath:idRelative"],
+        ["xpath=//div[3]/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "6efa4fdd-d0a7-4186-a435-4c0c5ba2197e",
+      "comment": "Sprawdź czy istnieje element z ceną produktu (koszyk powinien być pusty)",
+      "command": "verify",
+      "target": "css=.inventory_item_price",
+      "targets": [],
+      "value": "null"
+    }, {
+      "id": "ada74917-41d8-42fe-b9e6-411d0d84e0c5",
+      "comment": "",
+      "command": "echo",
+      "target": "proces zakupu dział poprawnie ",
+      "targets": [],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "7a7bd05f-6fb0-4eac-8ae5-b472cb89a47d",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["28d1084f-6ce2-4f16-a4e7-a87d69836e31"]
+  }],
+  "urls": ["https://www.saucedemo.com/", "http://webdriveruniversity.com/", "http://webdriveruniversity.com/index.html"],
+  "plugins": []
+}
