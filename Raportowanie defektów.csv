@@ -1,4 +1,4 @@
-﻿ ID;Reporter;Assignment    (developer);Title;Severity;Priority;Category;Reproducibility;Environment;Date/time;Preconditions;Repro steps;Actual result;Expected result;Attachments;
+ID;Reporter;Assignment (developer);Title;Severity;Priority;Category;Reproducibility;Environment;Date/time;Preconditions;Repro steps;Actual result;Expected result;Attachments;
 1;Paweł ;xxx;[Generic Shop][Strona Główna] Nie ładujące się grafiki produktów na stronie ;średni;niski;Graficzny;zawsze;"Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),
 Firefox, wersja: 88.0 (64 bity)";15-02-21 17:30;Użytkownik ma włączoną przeglądarkę;"1. Wejdź na stronę główną sklepu: http://skleptest.pl/
 2. Przewiń stronę w dół, aż do sekcji ""ALL BLACK TOPS""
