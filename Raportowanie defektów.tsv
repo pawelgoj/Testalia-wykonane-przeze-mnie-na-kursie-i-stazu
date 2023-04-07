@@ -1,0 +1,106 @@
+ IDReporterAssignment    (developer)TitleSeverityPriorityCategoryReproducibilityEnvironmentDate/timePreconditionsRepro stepsActual resultExpected resultAttachments
+1Pawe³ xxx[Generic Shop][Strona G³ówna] Nie ³aduj¹ce siê grafiki produktów na stronie œredniniskiGraficznyzawsze"Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),
+Firefox, wersja: 88.0 (64 bity)"15-02-21 17:30U¿ytkownik ma w³¹czon¹ przegl¹darkê"1. WejdŸ na stronê g³ówn¹ sklepu: http://skleptest.pl/
+2. Przewiñ stronê w dó³, a¿ do sekcji ""ALL BLACK TOPS""
+3. Zauwa¿, ¿e nie wyœwietla siê grafika produktu podpisanego: ""Black Top""
+4. Przewiñ stronê ni¿ej, do sekcji ""HIGH HEEL SHOES"" 
+5. Zauwa¿, ¿e nie wyœwietla siê grafika produktu podpisanego: ""Blue Sweater""""Nie wyœwietlaj¹ siê grafiki produktów o nazwach: ""Black Top"" i ""Blue Sweater"" w sekcjach ""HIGH HEEL SHOES"" i ""ALL BLACK TOPS"" na stronie g³ownej sklepu (http://skleptest.pl/#)."Grafiki produktów powinny wyœwietlaæ siê prawid³owo. https://drive.google.com/file/d/1SEczl5BA2i3JSkw5y-q1BCpLjGLxdtfM/view?usp=sharing
+2Pawe³ xxx[Generic Shop][Strona G³ówna] Niepoprawnie dzia³aj¹ce strza³ki przewijania slidera/karuzeli listy produktówœredniniskiB³¹d funkcjonalnyzawsze"Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa), 
+Firefox, wersja: 88.0 (64 bity)"15-02-21 18:00U¿ytkownik znajduje siê na stronie:  http://skleptest.pl/"1. Przewiñ stronê w dó³, a¿ do sekcji ""ALL BLACK TOPS""
+2. Kliknij w jedn¹ ze strza³ek przewijania listy produktów
+3. Zauwa¿, ¿e przycisk przekierowuje na sam¹ górê strony
+4. Przewiñ stronê w dó³, ¿a do sekcji ""HIGH HEEL SHOES""
+5. Zauwa¿, ¿e przycisk przekierowuje na sam¹ górê strony""Przyciski przewijania listy produktów w sekcjach: ""ALL BLACK TOPS"" i ""HIGH HEEL SHOES"" przekierowywanie na sam¹ górê strony g³ównej sklepu: http://skleptest.pl/"Przyciski przewijania listy produktów przewija listê produktów. https://drive.google.com/file/d/1lzZnRylOBwWEGolCJzs0GRy_oODhZGls/view?usp=sharing
+3Pawe³ xxx[Generic Shop] Niepoprawne dzia³anie przycisku <View cart> znajduj¹cego siê pod grafik¹ produktuwysokiœredniB³¹d funkcjonalnyzawsze "Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa), 
+Firefox, wersja: 88.0 (64 bity)"15-02-21 18:25U¿ytkownik znajduje siê na stronie: http://skleptest.pl/"1. Przewiñ stronê w dó³ do dowolnej sekcji z list¹ produktów np. ""ALL BLACK TOPS"" 
+2. Kliknij w przycisk <ADD TO CART> znajduj¹cy siê pod dowoln¹ grafik¹ produktu
+3. Odczekaj chwilkê, a¿ pojawi siê przycisk <View cart> 
+4. Zauwa¿, ¿e po klikniêciu w przycisk <View cart> nic siê niedzieje. "Przycisk <View cart>  nie przekierowywuje do koszyka,  problem wystêpuje niezale¿nie w jakiej, kategorii, podstronie czy w jakiej liœcie produktów wystêpuje dany produkt. Przycisk <View cart>  przekierowywuje do strony z koszykiem zakupów. https://drive.google.com/file/d/1TPPR4n1IX_5PRY0hJDDuS3IMrzxMFYQo/view?usp=sharing
+4Pawe³ xxx[Generic Shop][Koszyk] Niedzia³aj¹cy przycisk <x> usuwaj¹cy dany produkt z koszykawysokiwysokiB³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),15-02-21 19:00"-U¿ytkownik ma dodany przynajmniej jeden produkt do koszyka
+-U¿ytkownik znajduje siê na podstronie koszyka: http://skleptest.pl/cart/ sklepu ""http://skleptest.pl/"" ""1. ZnajdŸ sekcjê ""CART"" 
+2. Po lewej stronie przy produkcie, który chcesz usun¹æ kliknij przycisk <x>
+3. Zauwa¿, ¿e nic siê nie dzieje. "Przycisk <x> nie usuwa produktu przy którym siê znajduje.Przycisk <x> usuwa produkt przy którym siê znajduje. https://drive.google.com/file/d/1ToN-kUS-_XFqL45ch5fB8YhZJYJeBnYB/view?usp=sharing
+5Pawe³ xxx[Generic Shop][Shop] Nie ³adujace siê grafiki przedstawiaj¹ce kategorie produktów niskie niskie Graficznyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),15-02-21 19:15-U¿ytkownik znajduje siê na podstronie sklepu: http://skleptest.pl/shop/"1. Przewiñ stronê w  dó³ do sekcji ""SHOP""
+2. Zauwa¿, ¿e grafiki dla wszystkich kategorii siê nie wyœwietlaj¹ "Grafiki dla wszystkich kategorii na podstronie siê nie wyœwietlaj¹. Grafiki kategorii wyœwietlaj¹ siê poprawnie. https://drive.google.com/file/d/1uv4i6R2f41PG_9KZWlInujnZhy2Qnvea/view?usp=sharing
+6Pawe³ xxx"[Generic Shop][Strona G³ówna] Nie ³aduj¹ca siê podstrona z przecen¹"" Save up to 50% on our black tops"" "niskie niskie B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),15-02-21 19:25U¿ytkownik znajduje siê na stronie: http://skleptest.pl/"1. Przewiñ stronê w dó³, ¿a do sekcji ""ALL BLACK TOPS""
+2. Na liœcie ""ALL BLACK TOPS"" znajdŸ grafikê z napisem ""SAVE UP TO
+50% ON OUR BLACK TOPS"" 
+3. Kliknij w przycisk <BUY NOW>
+4. Zauwa¿, ¿e wczytuje siê nowa strona na której znajduje siê komunikat ""OOPS! THAT PAGE CAN’T BE FOUND."" ""Wczytuje siê nowa strona na której znajduje siê komunikat ""OOPS! THAT PAGE CAN’T BE FOUND."""Wczytuje siê strona z przecenionymi Topamihttps://drive.google.com/file/d/16JWWS-V-o27c7AeOTAe6QRWHiKS5zzpS/view?usp=sharing
+7Pawe³ xxx[Generic Shop][Strona G³ówna] Nie ³adujaca siê podstrona po wciœniêciu przycisku <Shop Now> znajduj¹cego siê na Banerze strony g³ównejniskie niskie B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),15-02-21 20:00U¿ytkownik znajduje siê na stronie: http://skleptest.pl/"1. ZnajdŸ na stronie bader strony ""2016 Amount Collection""
+2. Kliknij w przycisk <Shop Now> znajduj¹cy siê na banerze.
+3. Zauwa¿, ¿e strona siê nie ³aduje, przegl¹darka wyœwietla komunikat, ¿e strona jest nieosi¹galna.   "przegl¹darka wyœwietla komunikat, ¿e strona jest nie osi¹galna"Podstrona z ""2016 Autumn Collection"" ³aduje siê poprawnie. "https://drive.google.com/file/d/1Y0JXTYP3bCPBKInFIdiudZCwH8DIVr5M/view?usp=sharing
+8Pawe³ xxx[Generic Shop][Strona G³ówna] Nie odœwie¿aj¹ca siê wartoœæ koszyka po dodaniu produktu do koszyka œrednie œrednie B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),16-02-21 19:15U¿ytkownik znajduje siê na stronie: http://skleptest.pl/"1. ZnajdŸ na stronie dowoln¹ listê z produktami np. ""ALL BLACK TOPS"", ""HIGH HEEL SHOES"" lub ""MOST WANTED""
+2. Wybierz dowolny produkt
+3. Kliknij w przycisk <ADD TO CARD> pod grafik¹ wybranego produktu 
+4. Przewiñ stronê do góry 
+5. ZnajdŸ przycisk/ikonê  koszyka  <My Card> 
+6. Zauwa¿, ¿e przy przy ikonie koszyka, wartoœæ koszyka wyra¿ona w z³otówkach siê nie zmieni³a "Wartoœæ koszyka na ikonie/przycisku <My Card> nie aktualizuje siê automatycznie. Strona wymaga odœwie¿ania. Wartoœæ koszyka na ikonie/przycisku <My Card> powinna siê aktualizowaæ automatycznie, ka¿dorazowo po dodaniu nowego produktu do koszyka.  https://drive.google.com/file/d/1_r2eHAZNeGy2ZT8uvDIG3RTQ2GZu3KxT/view?usp=sharing
+9Pawe³ xxx[Generic Shop] Nie dzia³aj¹cy przycisk <Add to cart> na podstronach produktów wysokiwysoki B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),16-02-21 19:30U¿ytkownik znajduje siê na podstronie z opisem danego produktu np. http://skleptest.pl/product/little-black-top/"1. ZnajdŸ na stronie przycisk <Add to cart> znajduj¹cy siê po prawej stronie grafiki przedstawiaj¹cej produkt. 
+2. Kliknij w przycisk <Add to cart>.
+3. ZnajdŸ na górze strony po prawej stronie przycisk <My Cart>.
+4. Kliknij w przycisk <My Cart>. 
+5. Po za³adowaniu strony koszyka, zauwa¿, ¿e w koszyku nie ma dodanego produktu.  "W koszyku nie pojawia siê dodany produkt za pomoc¹ przycisku <ADD TO CART>. W koszyku znajduje siê dodany produkt za pomoc¹ przycisku <ADD TO CART>. https://drive.google.com/file/d/1bRwZTU3w_qjvYIRlnpwANrERrypYZdut/view?usp=sharing
+10Pawe³ xxx[Generic Shop][Koszyk] Nie dzia³aj¹ca funkcja zmiany iloœci dodawanego produktu do koszyka na podstronach produktów. œredni œredni B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),16-02-21 19:45U¿ytkownik znajduje siê na podstronie z opisem danego produktu np. http://skleptest.pl/product/little-black-top/" 1. ZnajdŸ na stronie przyciski zmiany iloœci dodawanego produktu do koszyka <-> i <+>, znajduj¹ce siê po prawej stronie obok grafiki przedstawiaj¹cej produkt, powy¿ej przycisku <Add to cart>. 
+2. Zauwa¿, ¿e miêdzy przyciskami <-> i <+> jest pokazywana niepoprawna iloœæ produktu dodanego do koszyka ""-99"" 
+3. Kliknij kilkakrotnie w przyciski <-> i <+>. 
+4. Zauwa¿, ¿e wyœwietlana wartoœæ iloœci produktu nie zmienia siê wcale lub w sposób niezgodny z oczekiwanym np. po kilku klikniêciach przyjmuje wartoœæ -10 z -99.""Na podstronie produktu miêdzy przyciskami <-> i <+> jest pokazywana  niepoprawna iloœæ produktu dodanego do koszyka ""-99"", zmiana iloœci produktu za pomoc¹ przycisków <-> i <+> nastêpuje w sposób niezgodny z oczekiwanym np. iloœæ produktu zmienia siê z -99 na -10.  "Po za³adowaniu strony pocz¹tkowa iloœæ produktu powinna wynosiæ 0, przycisk dodawania produktu <+> powinien dodawaæ produkt w iloœci 1, przycisk odejmowania produktu <-> powinien obejmowaæ  produkt w iloœci 1, niedozwolona powinna byæ ujemna iloœæ produktu. https://drive.google.com/file/d/10gRA4kpI_wgwmoRIYHn1-QRndqMXL--u/view?usp=sharing
+11Pawe³ xxx[Generic Shop][Koszyk] Mo¿liwoœæ wprowadzenia ujemnej liczby w sekcji iloœæ produktu w koszyku niski niski B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),16-02-21 20:00"-U¿ytkownik ma dodany przynajmniej jeden produkt do koszyka 
+-U¿ytkownik znajduje siê na podstronie koszyka: http://skleptest.pl/cart/ sklepu ""http://skleptest.pl/""""1. ZnajdŸ na stronie sekcjê “CART”
+2. W tabeli w sekcji “CART” znajdŸ kolumnê “Quantity”
+3. W kolumnie “Quantity” w wierszu dla wybranego produktu kliknij w liczbê iloœci produktu.
+4. Zmieñ iloœæ produktu na ujemn¹ za pomoc¹ klawiatury.
+5. Zauwa¿, ¿e po od klikniêciu ujemna wartoœæ iloœci produktu zosta³a w tabeli, nie pojawia³ siê ¿aden komunikat.""W kolumnie ""Quantity"" za pomoc¹ klawiatury mo¿na wprowadziæ wartoœæ ujemn¹ iloœci kupowanego produktu. "Nie da siê wprowadziæ wartoœci ujemnej kupowanego produktu, pojawia siê komunikat, ¿e wartoœæ ujemna jest niedozwolona. https://drive.google.com/file/d/1AP7sak_vdcU_O2FMBM8RDyxEVmm4gMT_/view?usp=sharing
+12Pawe³ xxx"[Generic Shop][Koszyk] Nie dzia³aj¹ca funkcja ""Check out with PayPal"" na podstronie koszyka "niski œredni B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),16-02-21 20:15"-U¿ytkownik ma dodany przynajmniej jeden produkt do koszyka 
+-U¿ytkownik znajduje siê na podstronie koszyka: http://skleptest.pl/cart/ sklepu ""http://skleptest.pl/""""1. ZnajdŸ na stronie sekcjê ""Cart totals""
+2. Pod przyciskiem <Poroceed to checkout> znajdŸ hiper³¹cze ""Check out with PayPal"" 
+3. Zauwa¿, ¿e nie wyœwietla siê logo PayPal'a
+4. Kliknij w hiper³¹cze ""Check out with PayPal""
+5. Zauwa¿, ¿e na stronie pojawia siê komunikat: ""PayPal error (2): An error (2) occurred while processing your PayPal payment. Please contact the store owner for assistance."""Po klikniêciu w hiper³¹cze nie mo¿na kontynuowaæ procesu zakupu z wykorzystaniem PayPal'a, nie wyœwietla siê logo PayPala przy hiper³¹czu. Mo¿na kontynuowaæ proces zakupu wykorzystuj¹c PayPal, logo PayPala wyœwietla siê prawid³owo.https://drive.google.com/file/d/1KSa6DIqApBahgaN8MKccMjV1w1r2rWRh/view?usp=sharing
+13Pawe³ xxx[Generic Shop][Koszyk] Nie  dzia³aj¹ca funkcja zatwierdzania kuponu na stronie koszyka œredniniski B³¹d funkcjonalnylosowoChrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),16-02-21 20:35"-U¿ytkownik ma dodany przynajmniej jeden produkt do koszyka 
+-U¿ytkownik znajduje siê na podstronie koszyka: http://skleptest.pl/cart/ sklepu ""http://skleptest.pl/""""1. ZnajdŸ sekcjê ""CARD"" na stronie. 
+2. W sekcji ""CARD"" znajdŸ pole do wpisywania numeru kuponu pod tabel¹ z produktami w koszyku.
+3. W pole wprowadŸ dowolny ci¹g cyfr za pomoc¹ klawiatury.
+4. ZatwierdŸ wprowadzany kod za pomoc¹ przycisku <APPLY COUPON> 
+5. Zauwa¿, ¿e nie pojawia siê ¿aden komunikat."Po wprowadzeniu dowolnego ci¹gu cyfr nie pojawia siê ¿aden komunikat o poprawnoœci numeru kuponu lub jego braku. Pojawia siê komunikat informuj¹cy czy numer kuponu jest poprawny czy naliczone s¹ zni¿ki. https://drive.google.com/file/d/1TyluuVzdgSdM-0zOa6ugPMnyb2TEhpaW/view?usp=sharing
+14Pawe³ xxx[Generic Shop] Mo¿liwoœæ wprowadzenia niepoprawnego adresu i numeru telefonu w formularzu zamówienia produktu niskiwysokiB³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),17-02-21 17:00"-U¿ytkownik ma dodany przynajmniej jeden produkt do koszyka 
+-U¿ytkownik znajduje siê na podstronie koszyka: http://skleptest.pl/cart/ sklepu ""http://skleptest.pl/""""1. ZnajdŸ na stronie sekcjê ""Cart totals"".
+2. W sekcji ""Cart totals"" znajdŸ przycisk <Proceed to checkout>.
+3. Kliknij w przycisk <Proceed to checkout>.
+4. W nowo otwartej stronie znajdŸ sekcjê ""CHECKOUT""
+5. WprowadŸ poprawne dane w polach formularza ""Biling details"" oprócz po³ ""Street address"" i ""Phone"" 
+6. W polu ""Street address"" wprowadŸ same cyfry. 
+7. W polu ""Phone"" wprowadŸ zbyt krótki numer telefonu np. trzycyfrowy. 
+8. Przewiñ stronê w dó³. 
+9. Na dole strony wybierz metodê p³atnoœci na ""Direct bank transfer"". 
+10. ZnajdŸ przycisk <PLACE ORDER>.
+11. Kliknij w przycisk <PLACE ORDER>.
+12. Zauwa¿, ¿e pojawia siê nowa strona z informacj¹, ¿e zamówienie zosta³o przyjête informacja o przyjêtym zamówieniu zostanie wys³ana na email u¿ytkownika."Pojawia siê nowa strona z informacj¹, ¿e zamówienie zosta³o przyjête informacja o przyjêtym zamówieniu zostanie wys³ana na email u¿ytkownika.Zamówienie nie jest przyjête, pojawia siê informacja o niepoprawnym adresie i numerze telefonu. "https://drive.google.com/file/d/1I_S93rSm7lWimbCRkVz_cVVeGLBkjAcY/view?usp=sharing
+https://drive.google.com/file/d/1ut2Y3o0i8vg0IQDJrNiSXuZw5gettY01/view?usp=sharing"
+15Pawe³ xxx[Generic Shop] Nie wyœwietla siê adres dostawy na stronie podsumowuj¹cej zamówienie. niski niski B³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),17-02-21 17:15"-U¿ytkownik ma dodany przynajmniej jeden produkt do koszyka 
+-U¿ytkownik znajduje siê na podstronie koszyka: http://skleptest.pl/cart/ sklepu ""http://skleptest.pl/""""1. ZnajdŸ na stronie sekcjê ""Cart totals"". 
+2. W sekcji ""Cart totals"" znajdŸ przycisk <Proceed to checkout>.
+3. Kliknij w przycisk <Proceed to checkout>. 
+4. W nowo otwartej stronie znajdŸ sekcjê ""CHECKOUT"" 
+5. WprowadŸ poprawne dane w polach formularza ""Biling details"".
+6. Obok formularza ""Billing details"" ZnajdŸ opcjê: ""Ship to a different address?"" 
+7. Zaznacz opcjê ""Ship to a different address?""
+8. Wype³nij formularz, który siê pojawi poprawnymi danymi.  
+9. Przewiñ stronê w dó³. 
+10. Na dole strony wybierz metodê p³atnoœci na ""Direct bank transfer"". 
+11. ZnajdŸ przycisk <PLACE ORDER>. 
+12. Kliknij w przycisk <PLACE ORDER>. 
+13. Pojawia siê nowa strona z informacj¹, ¿e zamówienie zosta³o przyjête.
+14. Przewiñ stronê w dó³, a¿ zauwa¿ysz sekcjê ""Shipping address"" 
+15. Zauwa¿, ¿e w sekcji ""Shipping address"" nie ma informacji o adresie dostawy.
+
+""W sekcji ""Shipping address"" nie ma informacji o adresie dostawy. ""W sekcji ""Shipping address"" znajduje siê informacja na jaki adres zostanie dostarczony towar. "https://drive.google.com/file/d/1HctWZ-DMs9-JezADkfu27yghHAdWhqyi/view?usp=sharing
+16Pawe³ xxx[Generic Shop] -Przycisk drukowania <Print> na stronie z przyjêtym z informacj¹ o przyjêtym zamówieniu nie dzia³a.œredniœredniB³¹d funkcjonalnyzawsze Chrome, wersja: 88.0.4324.150 (Oficjalna wersja) (64-bitowa),17-02-21 17:30"1. ZnajdŸ na stronie sekcjê ""Order details""
+2. Pod sekcj¹ ""Order details"" znajduje siê przycisk <Print>
+3. Kliknij w przycisk <Print>.
+4. Zauwa¿, ¿e po klikniêciu nic siê nie dzieje."Po klikniêciu w przycisk <Print> nic siê nie dzieje.Po klikniêciu w przycisk <Print> powinno siê pojawiæ okno podgl¹du wydruku w opcjami drukowania. https://drive.google.com/file/d/1cM3sFS1VMZqjsqS6ROhicwQttNUbwZ_H/view?usp=sharing
+17Pawe³ xxx[Generic Shop] Strona nie u¿ywa protoko³u HTTPS, poufne dane urzytkownika nie s¹ szyfrowaneŒredniœredni Techniczny zawsze Google Chrome, Wersja 90.0.4430.93 (Oficjalna wersja) (64-bitowa)17-02-21 17:50"U¿ytkownik znajduje siê na stronie: http://skleptest.pl/
+""1. Zauwa¿, ¿e przy polu wyszukiwania przegl¹darki “google chrome” przed adresem strony znajduje siê komunikat o tym, ¿e strona jest niebezpieczna.
+2. W³¹cz “Narzêdzia dla deweloperów” w przegl¹darce “google chrome”
+3. W menu “Narzêdzi dla deweloperów” kliknij w opcjê <Security>
+4. Zauwa¿, ¿e widnieje informacja o tym, ¿e strona jest niebezpieczna oraz, ¿e korzysta z protokó³ http zamiast https."Informacje w narzêdziu “Narzêdzia dla deweloperów” przegl¹darki google chrome wskazuj¹, ¿e strona korzysta z protoko³u http. Tym samym komunikacja klient-serwer nie jest szyfrowana.Stron korzysta z protoko³u https i komunikacja klient-serwer jest szyfrowana.https://drive.google.com/file/d/1tGisf445U3I3-h_T7GZCP5myuScstbWG/view?usp=sharing
