@@ -2,7 +2,7 @@
 
 ## Możesz tutaj znaleźć: 
 
-- Jak raportuję defekty, plik "Raportowanie defektów.xlsx", są to zgłaszane defekty aplikacji webowej typu sklep (adres testowanej strony: https://skleptest.pl/)
+- Jak raportuję defekty, plik "Raportowanie defektów.xlsx" lub "Raportowanie defektów.tsv" (pliki tsv mogą być wyświetlane przez GitHub więc jeśli nie chcesz ściągać pliku na swój komputer to zajrzyj do tego pliku), są to zgłaszane defekty aplikacji webowej typu sklep (adres testowanej strony: https://skleptest.pl/)
 
 - Przygotowany przeze mnie test plan: PlanTestów-Pawel Goj.pdf
 
